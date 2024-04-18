@@ -111,16 +111,16 @@ async function askName() {
     const answers = await inquirer.prompt({
       name: 'question5',
       type: 'list',
-      message: 'What is my favorite place?\n',
+      message: 'What is my favorite animal?\n',
       choices: [
-        'España',
-        'Italia',
-        'Alemania',
-        'Noruega',
+        'dog',
+        'cat',
+        'bee',
+        'monkey',
       ],
     });
   
-    return handleAnswer(answers.question_1 === 'España');
+    return handleAnswer(answers.question_1 === 'monkey');
   }
 
 
